@@ -1,2 +1,2 @@
 # Netology
-Netalogy practical works (iOS developer from scratch)
+Netalogy practical works (iOS developer from zero)
