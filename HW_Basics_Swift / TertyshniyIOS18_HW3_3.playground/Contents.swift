@@ -30,8 +30,8 @@ func addCustomerFioToArray(_ nameItem: String) -> Void {
 }
 
 func delCustomerFioFromArray(_ nameItem: String) -> Void {
-    if let ii = arrayCustomerFio.firstIndex(of: nameItem) {
-        arrayCustomerFio.remove(at: ii)
+    if let index = arrayCustomerFio.firstIndex(of: nameItem) {
+        arrayCustomerFio.remove(at: index)
     }
 }
 //------------------------
