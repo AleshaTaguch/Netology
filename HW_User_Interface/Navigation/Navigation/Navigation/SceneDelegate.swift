@@ -2,9 +2,6 @@
 //  SceneDelegate.swift
 //  Navigation
 //
-//  Created by Убрир on 15.02.2022.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
