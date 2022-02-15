@@ -21,13 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         statTBController.view.backgroundColor = .blue
 
         let userFeedNController = UINavigationController()
-        userFeedNController.view.backgroundColor = .cyan
+        let feedViewController = UIViewController()
+        feedViewController.view.backgroundColor = .cyan
         userFeedNController.tabBarItem = UITabBarItem(tabBarSystemItem: .history , tag: 0)
+        userFeedNController.setViewControllers([feedViewController], animated: true)
         
         let profileNController = UINavigationController()
-        profileNController.view.backgroundColor = .brown
+        let profileViewController = UIViewController()
+        profileViewController.view.backgroundColor = .brown
         profileNController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts , tag: 1)
-        
+        profileNController.setViewControllers([profileViewController], animated: true)
+
         statTBController.viewControllers = [userFeedNController,profileNController]
         
         window?.rootViewController = statTBController
