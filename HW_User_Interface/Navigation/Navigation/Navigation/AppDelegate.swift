@@ -14,30 +14,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .darkGray
-        
         
         let statTBController = UITabBarController()
-        statTBController.view.backgroundColor = .blue
 
-        let userFeedNController = UINavigationController()
-        let feedViewController = UIViewController()
-        feedViewController.view.backgroundColor = .cyan
-        userFeedNController.tabBarItem = UITabBarItem(tabBarSystemItem: .history , tag: 0)
-        userFeedNController.setViewControllers([feedViewController], animated: true)
+        let feedNavController = UINavigationController()
+        let feedTabImage = UIImage(named: "FeedImage")
+        feedNavController.tabBarItem = UITabBarItem(title: "Feed", image: feedTabImage, tag: 0)
         
-        let profileNController = UINavigationController()
-        let profileViewController = UIViewController()
-        profileViewController.view.backgroundColor = .brown
-        profileNController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts , tag: 1)
-        profileNController.setViewControllers([profileViewController], animated: true)
+        let feedViewController = FeedViewController()
+        feedNavController.setViewControllers([feedViewController], animated: true)
+        
+        let profileNavController = UINavigationController()
+        let profileTabImage = UIImage(named: "ProfileImage")
+        profileNavController.tabBarItem = UITabBarItem(title: "Profile", image: profileTabImage, tag: 1)
 
-        statTBController.viewControllers = [userFeedNController,profileNController]
+        let profileViewController = ProfileViewController()
+        profileNavController.setViewControllers([profileViewController], animated: true)
+
+        statTBController.viewControllers = [feedNavController,profileNavController]
         
         window?.rootViewController = statTBController
+        
         window?.makeKeyAndVisible()
+        
         return true
     }
+    
+
 
     // MARK: UISceneSession Lifecycle
 /*

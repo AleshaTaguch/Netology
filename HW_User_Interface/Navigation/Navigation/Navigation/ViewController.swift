@@ -1,8 +1,3 @@
-//
-//  ViewController.swift
-//  Navigation
-//
-
 import UIKit
 
 class ViewController: UIViewController {
