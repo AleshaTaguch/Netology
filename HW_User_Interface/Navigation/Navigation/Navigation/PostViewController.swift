@@ -19,9 +19,7 @@ class PostViewController: UIViewController {
     }
     
     @objc func showInfo () {
-        print("showInfo")
         let infoViewController = InfoViewController()
-        //infoViewController.modalPresentationStyle = .formSheet
         present(infoViewController, animated: false, completion: nil)
     }
     

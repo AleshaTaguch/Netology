@@ -5,9 +5,9 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .yellow
-        self.title = "info"
+        self.title = "Info"
         
-        let button = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 50))
+        let button = UIButton(frame: CGRect(x: 50, y: 100, width: 200, height: 50))
         button.setTitle("Go Alert", for: .normal)
         button.backgroundColor = .red
         button.setTitleColor(.white, for: .normal)
@@ -16,7 +16,6 @@ class InfoViewController: UIViewController {
         
     }
 
-    
     @objc func showAlert() {
         let alertViewController = UIAlertController(title: "Title Alert", message: "Very long message", preferredStyle: .alert)
         let actionYes = UIAlertAction(title: "Yes", style: .default, handler: (printAlertResult))
@@ -28,7 +27,6 @@ class InfoViewController: UIViewController {
         self.present(alertViewController, animated: true, completion: nil)
         
     }
-    
     
     func printAlertResult(_ alertAction: UIAlertAction) {
         if let alertButton = alertAction.title {
