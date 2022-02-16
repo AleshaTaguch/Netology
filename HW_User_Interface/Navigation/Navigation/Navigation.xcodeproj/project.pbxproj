@@ -15,6 +15,8 @@
 		652E085627BD529A007A1526 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E085527BD529A007A1526 /* PostViewController.swift */; };
 		652E085827BD53A5007A1526 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E085727BD53A5007A1526 /* FeedViewController.swift */; };
 		652E085A27BD5502007A1526 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E085927BD5502007A1526 /* ProfileViewController.swift */; };
+		652E085C27BD7929007A1526 /* CommonDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E085B27BD7929007A1526 /* CommonDefinition.swift */; };
+		652E085E27BD8077007A1526 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E085D27BD8077007A1526 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		652E085527BD529A007A1526 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		652E085727BD53A5007A1526 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		652E085927BD5502007A1526 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		652E085B27BD7929007A1526 /* CommonDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDefinition.swift; sourceTree = "<group>"; };
+		652E085D27BD8077007A1526 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,11 @@
 				6528866527BC105C005A379F /* Assets.xcassets */,
 				6528866727BC105C005A379F /* LaunchScreen.storyboard */,
 				6528866A27BC105C005A379F /* Info.plist */,
+				652E085B27BD7929007A1526 /* CommonDefinition.swift */,
 				652E085927BD5502007A1526 /* ProfileViewController.swift */,
 				652E085727BD53A5007A1526 /* FeedViewController.swift */,
 				652E085527BD529A007A1526 /* PostViewController.swift */,
+				652E085D27BD8077007A1526 /* InfoViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			files = (
 				652E085A27BD5502007A1526 /* ProfileViewController.swift in Sources */,
 				652E085627BD529A007A1526 /* PostViewController.swift in Sources */,
+				652E085C27BD7929007A1526 /* CommonDefinition.swift in Sources */,
 				6528866127BC1053005A379F /* ViewController.swift in Sources */,
 				652E085827BD53A5007A1526 /* FeedViewController.swift in Sources */,
 				6528865D27BC1053005A379F /* AppDelegate.swift in Sources */,
+				652E085E27BD8077007A1526 /* InfoViewController.swift in Sources */,
 				6528865F27BC1053005A379F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

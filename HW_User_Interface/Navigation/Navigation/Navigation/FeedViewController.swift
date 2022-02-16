@@ -1,6 +1,8 @@
 import UIKit
 
 class FeedViewController: UIViewController {
+    
+    var currentPost: Post?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,15 +14,14 @@ class FeedViewController: UIViewController {
         button.setTitle("Go Post View", for: .normal)
         button.backgroundColor = .red
         button.setTitleColor(.white, for: .normal)
-        button.addTarget(self, action: #selector(tap), for: .touchUpInside)
+        button.addTarget(self, action: #selector(showPost), for: .touchUpInside)
         self.view.addSubview(button)
     }
     
-    @objc func tap() {
+    @objc func showPost() {
+        currentPost = Post(title: "Post 12345")
         let postViewController = PostViewController()
-        postViewController.view.backgroundColor = .red
-        postViewController.title = "View Post"
-        postViewController.modalPresentationStyle = .fullScreen
+        postViewController.post = currentPost
         navigationController?.pushViewController(postViewController, animated: true)
 
     }
